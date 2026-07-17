@@ -681,5 +681,5 @@ For issues or questions, please refer to the project documentation or contact th
 
 ---
 
-**Last Updated:** January 2024
+**Last Updated:** July 2026
 **Version:** 1.0.0
