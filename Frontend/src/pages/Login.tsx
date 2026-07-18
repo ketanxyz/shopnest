@@ -29,7 +29,7 @@ export const Login = () => {
         </Link>
 
         <h1 className="heading-lg mb-1">Welcome back</h1>
-        <p className="subtitle mb-10">Sign in to your NOVA account</p>
+        <p className="subtitle mb-10">Sign in to your ShopNest account</p>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
           <div>

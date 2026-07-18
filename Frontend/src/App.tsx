@@ -12,6 +12,7 @@ import { SearchModal } from './components/SearchModal';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
+import { VerifyOtp } from './pages/VerifyOtp';
 import { ForgotPassword } from './pages/ForgotPassword';
 import { Products } from './pages/Products';
 import { ProductDetail } from './pages/ProductDetail';
@@ -63,6 +64,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
+                <Route path="/verify-otp" element={<VerifyOtp />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/products/:id" element={<ProductDetail />} />

@@ -44,18 +44,38 @@ export const Checkout = () => {
     setStep(1);
   };
 
+  const loadRazorpayScript = (): Promise<boolean> => new Promise((resolve) => {
+    if (window.Razorpay) {
+      resolve(true);
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+
   const handlePayment = async () => {
     try {
       const address = JSON.parse(localStorage.getItem('checkout-address') || '{}');
       const amount = Math.round(totalPrice());
       const razorpayOrder = await createRazorpayOrder(amount);
 
+      const isRazorpayReady = await loadRazorpayScript();
+      if (!isRazorpayReady) {
+        toast.error('Unable to load Razorpay checkout. Please try again later.');
+        return;
+      }
+
       const options = {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_placeholder',
         amount: razorpayOrder.amount,
         currency: 'INR',
-        name: 'NOVA',
-        description: 'NOVA Order Payment',
+        name: 'ShopNest',
+        description: 'ShopNest Order Payment',
         order_id: razorpayOrder.id,
         handler: async function (response: any) {
           await verifyPayment({

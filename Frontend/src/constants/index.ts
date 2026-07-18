@@ -48,7 +48,7 @@ export const BRANDS = [
 ];
 
 export const TESTIMONIALS = [
-  { name: 'Arjun Mehta', role: 'Tech Enthusiast', quote: 'The curation at NOVA is unmatched. Every product feels handpicked for people who demand the best.', avatar: 'https://i.pravatar.cc/120?img=11' },
-  { name: 'Priya Sharma', role: 'Software Engineer', quote: 'From unboxing to setup — the entire experience reflects the premium quality NOVA stands for.', avatar: 'https://i.pravatar.cc/120?img=5' },
+  { name: 'Arjun Mehta', role: 'Tech Enthusiast', quote: 'The curation at ShopNest is unmatched. Every product feels handpicked for people who demand the best.', avatar: 'https://i.pravatar.cc/120?img=11' },
+  { name: 'Priya Sharma', role: 'Software Engineer', quote: 'From unboxing to setup — the entire experience reflects the premium quality ShopNest stands for.', avatar: 'https://i.pravatar.cc/120?img=5' },
   { name: 'Rahul Verma', role: 'Creative Director', quote: 'Finally, a tech store that treats design with the same seriousness as specifications.', avatar: 'https://i.pravatar.cc/120?img=3' },
 ];

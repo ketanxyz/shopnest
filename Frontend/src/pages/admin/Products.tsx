@@ -179,10 +179,13 @@ export const AdminProducts = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Category</label>
-                    <select {...register('category')} className="w-full px-4 py-3 glass rounded-xl text-white outline-none focus:border-accent/50 transition-colors border border-white/10">
-                      <option value="" className="bg-secondary">Select category</option>
+                    <select
+                      {...register('category')}
+                      className="w-full px-4 py-3 glass rounded-xl text-white bg-[rgba(255,255,255,0.05)] outline-none focus:border-accent/50 focus:bg-[rgba(255,255,255,0.08)] transition-colors border border-white/10"
+                    >
+                      <option value="" className="bg-[#0f172a] text-white">Select category</option>
                       {['Phones', 'Laptops', 'Gaming', 'Audio', 'Wearables', 'Accessories', 'Cameras', 'Smart Home'].map((cat) => (
-                        <option key={cat} value={cat} className="bg-secondary">{cat}</option>
+                        <option key={cat} value={cat} className="bg-[#0f172a] text-white">{cat}</option>
                       ))}
                     </select>
                     {errors.category && <p className="text-error text-xs mt-1">{errors.category.message}</p>}

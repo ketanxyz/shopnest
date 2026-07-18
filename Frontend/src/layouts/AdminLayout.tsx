@@ -21,7 +21,7 @@ export const AdminLayout = () => {
     <div className="min-h-screen bg-background text-white flex">
       <aside className="w-64 bg-secondary border-r border-white/5 fixed h-full p-6 hidden lg:block">
         <Link to="/admin" className="flex items-center gap-2 mb-8">
-          <span className="text-xl font-bold">NOVA</span>
+          <span className="text-xl font-bold">ShopNest</span>
           <span className="text-xs px-2 py-0.5 rounded-full bg-accent/20 text-accent">
             Admin
           </span>
@@ -59,7 +59,7 @@ export const AdminLayout = () => {
       <div className="lg:ml-64 flex-1 min-h-screen">
         <header className="h-16 border-b border-white/5 flex items-center px-6 bg-background/80 backdrop-blur-xl sticky top-0 z-30">
           <div className="flex items-center gap-3 lg:hidden">
-            <Link to="/" className="text-lg font-bold">NOVA</Link>
+            <Link to="/" className="text-lg font-bold">ShopNest</Link>
             <span className="text-xs px-2 py-0.5 rounded-full bg-accent/20 text-accent">
               Admin
             </span>

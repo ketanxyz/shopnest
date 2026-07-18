@@ -84,6 +84,20 @@ export interface RegisterData {
   password: string;
 }
 
+export interface RegisterResponse {
+  message: string;
+  email: string;
+}
+
+export interface VerifyOtpData {
+  email: string;
+  otp: string;
+}
+
+export interface ResendOtpData {
+  email: string;
+}
+
 export interface CreateOrderData {
   items: { productId: string; qty: number; price: number }[];
   totalAmount: number;

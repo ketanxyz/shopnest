@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 const footerLinks = {
   Products: ['Phones', 'Laptops', 'Gaming', 'Audio', 'Wearables', 'Accessories'],
   Support: ['Contact Us', 'FAQ', 'Shipping', 'Returns', 'Warranty'],
-  Company: ['About NOVA', 'Careers', 'Press', 'Blog', 'Sustainability'],
+  Company: ['About ShopNest', 'Careers', 'Press', 'Blog', 'Sustainability'],
   Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'],
 };
 
@@ -18,13 +18,13 @@ export const Footer = () => {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="text-xl font-bold tracking-tight">
-              NOVA
+              ShopNest
             </Link>
             <p className="mt-2 text-sm text-text-tertiary max-w-[200px] leading-relaxed">
               Future of Smart Living.
             </p>
             <p className="mt-6 text-xs text-text-tertiary">
-              &copy; {new Date().getFullYear()} NOVA.<br />
+              &copy; {new Date().getFullYear()} ShopNest.<br />
               All rights reserved.
             </p>
           </div>

@@ -64,10 +64,10 @@ export const AdminOrders = () => {
                       <select
                         value={order.status}
                         onChange={(e) => updateStatus.mutate({ id: order._id, status: e.target.value })}
-                        className={`text-sm px-3 py-1.5 glass rounded-lg outline-none border border-white/10 ${getStatusColor(order.status)}`}
+                        className={`text-sm px-3 py-1.5 glass rounded-lg outline-none border border-white/10 bg-[rgba(255,255,255,0.05)] text-white focus:border-accent/50 focus:bg-[rgba(255,255,255,0.08)] ${getStatusColor(order.status)}`}
                       >
                         {ORDER_STATUSES.map((s) => (
-                          <option key={s} value={s} className="bg-secondary">{s}</option>
+                          <option key={s} value={s} className="bg-[#0f172a] text-white">{s}</option>
                         ))}
                       </select>
                     </td>

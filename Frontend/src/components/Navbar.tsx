@@ -46,7 +46,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <span className="text-xl md:text-2xl font-bold tracking-tight text-white">
-              NOVA
+              ShopNest
             </span>
             <span className="hidden md:block text-[10px] uppercase tracking-[0.2em] text-text-secondary mt-1">
               /future of smart living
